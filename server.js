@@ -12,6 +12,8 @@ app.use(express.urlencoded({ extended: true }));
 // parse incoming JSON data
 app.use(express.json());
 
+// This will make all files in the public folder static resources. This means, all of our frontend code can now be
+// accessed without having a specific server endpoint created for it.
 app.use(express.static('public'));
 
 function filterByQuery(query, animalsArray) {
