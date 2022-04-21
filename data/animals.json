@@ -1,5 +1,5 @@
 {
-  "animals": [
+  "animalsArray": [
     {
       "id": "0",
       "name": "Spindle",
@@ -101,31 +101,13 @@
       ]
     },
     {
-      "name": "cars",
-      "species": "Car",
-      "diet": "folivore",
+      "name": "Doggggogoog",
+      "species": "Cars",
+      "diet": "herbivore",
       "personalityTraits": [
-        "hungry"
+        "loving"
       ],
       "id": "10"
-    },
-    {
-      "name": "cars",
-      "species": "Car",
-      "diet": "folivore",
-      "personalityTraits": [
-        "hungry"
-      ],
-      "id": "11"
-    },
-    {
-      "name": "cars",
-      "species": "Car",
-      "diet": "folivore",
-      "personalityTraits": [
-        "hungry"
-      ],
-      "id": "12"
     }
   ]
 }
