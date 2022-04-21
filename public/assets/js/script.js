@@ -28,6 +28,7 @@ const handleAnimalFormSubmit = (event) => {
   }
   const animalObject = { name, species, diet, personalityTraits };
 
+  // Since our server is hosted on our url, we don't need to include anything else in the fetch 'link label'
   fetch('/api/animals', {
     method: 'POST',
     headers: {

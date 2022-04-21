@@ -115,6 +115,22 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
+// The endpoint should be reflective of the state, if we are visiting a page with animals,
+// the endpoint should be normal-looking whereas if it has the term 'api' in it, it deals with JSON data
+app.get('/animals', (req, res) => {
+  // This will return animals.html as the response
+  res.sendFile(path.join(__dirname, './public/animals.html'));
+});
+
+app.get('/zookeepers', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/zookeepers.html'));
+});
+
+// This is similar to react when returning error pages for incorrect paths
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/index.html'));
+});
+
 app.listen(PORT, () => {
   console.log(`API server now on port ${PORT}!`);
 });
